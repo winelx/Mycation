@@ -1,1 +1,1 @@
-include ':animation', ':MVP', ':daynight', ':daynight2'
+include ':animation', ':MVP', ':daynight', ':daynight2', ':bazier', ':greedao'
