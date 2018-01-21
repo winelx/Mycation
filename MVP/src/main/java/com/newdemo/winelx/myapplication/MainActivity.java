@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 mLoginPersen.Login(context, getUser(), getPass());
                 break;
             case R.id.output:
-                context.startActivity(new Intent(context, Main2Activity.class));
+                context.startActivity(new Intent(context, Main22Activity.class));
                 break;
             default:
                 break;
