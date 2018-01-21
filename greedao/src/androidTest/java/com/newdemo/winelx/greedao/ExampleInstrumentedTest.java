@@ -1,4 +1,4 @@
-package com.newdemo.winelx.myapplication;
+package com.newdemo.winelx.greedao;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.newdemo.winelx.myapplication", appContext.getPackageName());
+        assertEquals("com.newdemo.winelx.greedao", appContext.getPackageName());
     }
 }

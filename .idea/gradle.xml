@@ -10,8 +10,10 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/MVP" />
             <option value="$PROJECT_DIR$/animation" />
+            <option value="$PROJECT_DIR$/bazier" />
             <option value="$PROJECT_DIR$/daynight" />
             <option value="$PROJECT_DIR$/daynight2" />
+            <option value="$PROJECT_DIR$/greedao" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
