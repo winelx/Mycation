@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    style="font-size:14px;">
+    <declare-styleable name="NineGridView">
+        <attr name="ngv_gridSpacing" format="dimension" />
+    </declare-styleable>
+
+</resources>

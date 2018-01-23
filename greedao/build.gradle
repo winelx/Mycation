@@ -18,6 +18,8 @@ android {
     greendao {
         //版本号，升级时可配置
         schemaVersion 1
+        daoPackage 'com.newdemo.winelx.greedao'     //包名
+        targetGenDir 'src/main/java'                 //生成目录
     }
 
 
@@ -41,4 +43,5 @@ dependencies {
     //ORM数据库
     compile 'org.greenrobot:greendao:3.2.0'
     compile 'org.greenrobot:greendao:3.2.0'
+    compile 'com.github.LidongWen:DataBaseUpdate:1.0.2'
 }
