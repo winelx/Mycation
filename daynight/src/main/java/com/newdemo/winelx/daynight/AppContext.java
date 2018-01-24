@@ -13,9 +13,9 @@ import com.newdemo.winelx.daynight.Utils.ConfigUtil;
  * Created by leo on 16/4/24.
  */
 public class AppContext extends Application {
-    private static String THEME_KEY = "theme_mode";
-    private static AppContext appContext;
-    private boolean isNight;
+    private static String THEME_KEY = "theme_mode";//这个是sp里保存的状态key值
+    private static AppContext appContext;//单例实现appContext，
+    private boolean isNight;//这个是当前状态值
 
     public static AppContext me() {
         if (appContext == null) {
@@ -28,13 +28,14 @@ public class AppContext extends Application {
     public void onCreate() {
         super.onCreate();
         appContext = this;
-        initThemeMode();
+        initThemeMode();//调用方法进行设置
     }
 
     //这是默认调用的方法，根据保存的记录判断加载白天模式还是夜间模式
     private void initThemeMode() {
+        //拿到sp里保存的状态值
         isNight = ConfigUtil.getBoolean(THEME_KEY, false);
-        if (isNight) {
+        if (isNight) {//根据状态进行模式切换
             //夜间模式
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         } else {
